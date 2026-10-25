@@ -1,0 +1,32 @@
+Package: condagree
+Type: Package
+Title: Ability-Conditioned Inter-Rater Agreement for Constructed-Response Items
+Version: 0.1.0
+Authors@R: c(
+    person("Azmi", "Fitrisia", role = "aut",
+           comment = c(ORCID = "0000-0002-4230-4921")),
+    person("Tri Zahra", "Ningsih", role = c("aut", "cre"),
+           email = "trizahra.2023@student.uny.ac.id",
+           comment = c(ORCID = "0000-0002-2544-9627")),
+    person("Suci Kurnia", "Putri", role = "aut",
+           comment = c(ORCID = "0009-0007-8021-148X")))
+Description: Estimates inter-rater agreement for double-scored constructed-response
+    items as a function of examinee ability rather than as a single global
+    index. Provides kernel- and band-conditional exact agreement and
+    item-stratified Cohen's kappa (Cohen, 1960) <doi:10.1177/001316446002000104>,
+    school-cluster bootstrap confidence bands, a uniformity test that separates
+    the score-opportunity effect (partial-credit categories are harder to score)
+    from a residual ability effect, a test of directional rater severity, and
+    pooling over plausible values with Rubin's rules and the D1 statistic of
+    Li, Raghunathan and Rubin (1991) <doi:10.1080/01621459.1991.10475152>.
+    A data generator supports simulation studies.
+License: GPL (>= 3)
+URL: https://github.com/trizahra10019-spec/condagree
+BugReports: https://github.com/trizahra10019-spec/condagree/issues
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: stats, graphics, grDevices, splines
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+LazyData: true
+RoxygenNote: 7.3.1
